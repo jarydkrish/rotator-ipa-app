@@ -1,0 +1,12 @@
+{
+  "name": "rotator-ipa-app",
+  "displayName": "rotator-ipa-app",
+  "expo": {
+    "name": "rotator-ipa-app",
+    "slug": "rotator-ipa-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
