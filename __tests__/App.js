@@ -1,10 +1,12 @@
-import 'react-native';
+import { shallow } from 'enzyme';
 import React from 'react';
+import { View } from 'react-native';
+
 import App from '../App';
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-
-it('renders correctly', () => {
-  renderer.create(<App />);
+describe('<App />', () => {
+  it('should render a <View />', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find(View).length).toEqual(1);
+  });
 });
