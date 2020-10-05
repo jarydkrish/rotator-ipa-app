@@ -12,6 +12,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		552E7C9B9F9D988367C7B4FA /* libPods-Rotator WidgetExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C343EAE4949E73B498F0127 /* libPods-Rotator WidgetExtension.a */; };
+		713EB049252A9C59002C22EA /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 713EB048252A9C59002C22EA /* schema.json */; };
 		71465819252A5DD000BF8D1E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71465818252A5DD000BF8D1E /* WidgetKit.framework */; };
 		7146581B252A5DD000BF8D1E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7146581A252A5DD000BF8D1E /* SwiftUI.framework */; };
 		7146581E252A5DD000BF8D1E /* Rotator_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146581D252A5DD000BF8D1E /* Rotator_Widget.swift */; };
@@ -56,6 +57,7 @@
 		4ADAC215D3339FC9043BC351 /* Pods-Rotator WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-Rotator WidgetExtension/Pods-Rotator WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		4D483BBF7881B987A8CA2C89 /* Pods-Rotator IPA App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator IPA App.debug.xcconfig"; path = "Target Support Files/Pods-Rotator IPA App/Pods-Rotator IPA App.debug.xcconfig"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-rotatoripaapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rotatoripaapp.debug.xcconfig"; path = "Target Support Files/Pods-rotatoripaapp/Pods-rotatoripaapp.debug.xcconfig"; sourceTree = "<group>"; };
+		713EB048252A9C59002C22EA /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		7146580E252A5D4E00BF8D1E /* Rotator IPA App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rotator IPA App-Bridging-Header.h"; sourceTree = "<group>"; };
 		71465817252A5DD000BF8D1E /* Rotator WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rotator WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71465818252A5DD000BF8D1E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -131,6 +133,7 @@
 		7146581C252A5DD000BF8D1E /* Rotator Widget */ = {
 			isa = PBXGroup;
 			children = (
+				713EB048252A9C59002C22EA /* schema.json */,
 				7146581D252A5DD000BF8D1E /* Rotator_Widget.swift */,
 				7146581F252A5DD200BF8D1E /* Assets.xcassets */,
 				71465821252A5DD200BF8D1E /* Info.plist */,
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713EB049252A9C59002C22EA /* schema.json in Resources */,
 				71465820252A5DD200BF8D1E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
