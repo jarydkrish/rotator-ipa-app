@@ -54,3 +54,7 @@ A yarn command is included to get you started on Android:
 ```bash
 yarn android
 ```
+
+### License
+
+This project is [MIT Licensed](./LICENSE.md)
