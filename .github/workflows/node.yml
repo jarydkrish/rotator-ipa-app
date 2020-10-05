@@ -27,7 +27,10 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-yarn-
     - name: Yarn install
-      run: |
-        yarn install --pure-lockfile
+      run: yarn install --pure-lockfile
     - name: Run tests
-      run: yarn test
+      uses: paambaati/codeclimate-action@v2.7.4
+      env:
+        CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_TOKEN }}
+      with:
+        coverageCommand: yarn test
