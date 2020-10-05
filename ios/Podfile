@@ -1,14 +1,19 @@
+# frozen_string_literal: true
+
+# rubocop:disable Metrics/LineLength
+
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/react-native-unimodules/cocoapods.rb'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 platform :ios, '10.0'
+project './rotatoripaapp.xcodeproj'
 
-target 'rotatoripaapp' do
+target 'Rotator IPA App' do
   use_unimodules!
   config = use_native_modules!
 
-  use_react_native!(:path => config["reactNativePath"])
+  use_react_native!(path: config['reactNativePath'])
 
   # Enables Flipper.
   #
@@ -19,3 +24,10 @@ target 'rotatoripaapp' do
     flipper_post_install(installer)
   end
 end
+
+target 'Rotator WidgetExtension' do
+  pod 'Apollo'
+  pod 'Apollo/SQLite'
+end
+
+# rubocop:enable Metrics/LineLength
