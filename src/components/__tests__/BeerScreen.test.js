@@ -2,11 +2,11 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import { View } from 'react-native';
 
-import App from '../App';
+import BeerScreen from '../BeerScreen';
 
-describe('<App />', () => {
+describe('<BeerScreen />', () => {
   it('should render a <View />', () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<BeerScreen />);
     expect(wrapper.find(View).length).toEqual(1);
   });
 });

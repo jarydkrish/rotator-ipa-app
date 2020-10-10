@@ -11,7 +11,8 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		552E7C9B9F9D988367C7B4FA /* libPods-Rotator WidgetExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C343EAE4949E73B498F0127 /* libPods-Rotator WidgetExtension.a */; };
+		7109C58B253243DC001807AD /* Rotator_Widget.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 7109C58A253243DC001807AD /* Rotator_Widget.graphql */; };
+		7109C59525324483001807AD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109C59425324483001807AD /* API.swift */; };
 		713EB049252A9C59002C22EA /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 713EB048252A9C59002C22EA /* schema.json */; };
 		71465819252A5DD000BF8D1E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71465818252A5DD000BF8D1E /* WidgetKit.framework */; };
 		7146581B252A5DD000BF8D1E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7146581A252A5DD000BF8D1E /* SwiftUI.framework */; };
@@ -21,6 +22,7 @@
 		71E591D425292DA700AAACA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E591D325292DA700AAACA0 /* Assets.xcassets */; };
 		AC83BCD086CC9B0C4DA10273 /* libPods-Rotator IPA App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC2867B40815BFE2FEA4B4A /* libPods-Rotator IPA App.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		F5E09E79EB9FD6AA7E792191 /* libPods-Rotator WidgetExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5540CA72B41EA84E6601C1 /* libPods-Rotator WidgetExtension.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,15 +50,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B5540CA72B41EA84E6601C1 /* libPods-Rotator WidgetExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rotator WidgetExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* rotatoripaapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rotatoripaapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rotatoripaapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = rotatoripaapp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rotatoripaapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rotatoripaapp/main.m; sourceTree = "<group>"; };
-		4ADAC215D3339FC9043BC351 /* Pods-Rotator WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-Rotator WidgetExtension/Pods-Rotator WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		4D483BBF7881B987A8CA2C89 /* Pods-Rotator IPA App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator IPA App.debug.xcconfig"; path = "Target Support Files/Pods-Rotator IPA App/Pods-Rotator IPA App.debug.xcconfig"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-rotatoripaapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rotatoripaapp.debug.xcconfig"; path = "Target Support Files/Pods-rotatoripaapp/Pods-rotatoripaapp.debug.xcconfig"; sourceTree = "<group>"; };
+		7109C58A253243DC001807AD /* Rotator_Widget.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rotator_Widget.graphql; sourceTree = "<group>"; };
+		7109C59425324483001807AD /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		713EB048252A9C59002C22EA /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		7146580E252A5D4E00BF8D1E /* Rotator IPA App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rotator IPA App-Bridging-Header.h"; sourceTree = "<group>"; };
 		71465817252A5DD000BF8D1E /* Rotator WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rotator WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,13 +73,13 @@
 		71E591D325292DA700AAACA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-rotatoripaapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rotatoripaapp.release.xcconfig"; path = "Target Support Files/Pods-rotatoripaapp/Pods-rotatoripaapp.release.xcconfig"; sourceTree = "<group>"; };
 		85E774D7BE5C72BC400ADC6C /* Pods-Rotator IPA App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator IPA App.release.xcconfig"; path = "Target Support Files/Pods-Rotator IPA App/Pods-Rotator IPA App.release.xcconfig"; sourceTree = "<group>"; };
-		8C343EAE4949E73B498F0127 /* libPods-Rotator WidgetExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rotator WidgetExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC2867B40815BFE2FEA4B4A /* libPods-Rotator IPA App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rotator IPA App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AB5E552C60619EA0A4B8BE /* Pods-Rotator WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-Rotator WidgetExtension/Pods-Rotator WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = rotatoripaapp/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EF2A76219632209AA9C1E60D /* Pods-Rotator WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-Rotator WidgetExtension/Pods-Rotator WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		FBCBF9BE447E82AA40DD2687 /* Pods-Rotator WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rotator WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-Rotator WidgetExtension/Pods-Rotator WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +97,7 @@
 			files = (
 				7146581B252A5DD000BF8D1E /* SwiftUI.framework in Frameworks */,
 				71465819252A5DD000BF8D1E /* WidgetKit.framework in Frameworks */,
-				552E7C9B9F9D988367C7B4FA /* libPods-Rotator WidgetExtension.a in Frameworks */,
+				F5E09E79EB9FD6AA7E792191 /* libPods-Rotator WidgetExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +129,7 @@
 				71465818252A5DD000BF8D1E /* WidgetKit.framework */,
 				7146581A252A5DD000BF8D1E /* SwiftUI.framework */,
 				9BC2867B40815BFE2FEA4B4A /* libPods-Rotator IPA App.a */,
-				8C343EAE4949E73B498F0127 /* libPods-Rotator WidgetExtension.a */,
+				0B5540CA72B41EA84E6601C1 /* libPods-Rotator WidgetExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,10 +137,12 @@
 		7146581C252A5DD000BF8D1E /* Rotator Widget */ = {
 			isa = PBXGroup;
 			children = (
+				7109C59425324483001807AD /* API.swift */,
 				713EB048252A9C59002C22EA /* schema.json */,
 				7146581D252A5DD000BF8D1E /* Rotator_Widget.swift */,
 				7146581F252A5DD200BF8D1E /* Assets.xcassets */,
 				71465821252A5DD200BF8D1E /* Info.plist */,
+				7109C58A253243DC001807AD /* Rotator_Widget.graphql */,
 			);
 			path = "Rotator Widget";
 			sourceTree = "<group>";
@@ -188,8 +194,8 @@
 				7A4D352CD337FB3A3BF06240 /* Pods-rotatoripaapp.release.xcconfig */,
 				4D483BBF7881B987A8CA2C89 /* Pods-Rotator IPA App.debug.xcconfig */,
 				85E774D7BE5C72BC400ADC6C /* Pods-Rotator IPA App.release.xcconfig */,
-				4ADAC215D3339FC9043BC351 /* Pods-Rotator WidgetExtension.debug.xcconfig */,
-				EF2A76219632209AA9C1E60D /* Pods-Rotator WidgetExtension.release.xcconfig */,
+				FBCBF9BE447E82AA40DD2687 /* Pods-Rotator WidgetExtension.debug.xcconfig */,
+				A5AB5E552C60619EA0A4B8BE /* Pods-Rotator WidgetExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -224,7 +230,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71465825252A5DD200BF8D1E /* Build configuration list for PBXNativeTarget "Rotator WidgetExtension" */;
 			buildPhases = (
-				FB23790DBC03B718EBDD0CA8 /* [CP] Check Pods Manifest.lock */,
+				B3EAF123C7F2585723C85150 /* [CP] Check Pods Manifest.lock */,
+				7109C581253240C3001807AD /* Generate Apollo GraphQL API */,
 				71465813252A5DD000BF8D1E /* Sources */,
 				71465814252A5DD000BF8D1E /* Frameworks */,
 				71465815252A5DD000BF8D1E /* Resources */,
@@ -292,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				713EB049252A9C59002C22EA /* schema.json in Resources */,
+				7109C58B253243DC001807AD /* Rotator_Widget.graphql in Resources */,
 				71465820252A5DD200BF8D1E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +343,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7109C581253240C3001807AD /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/Rotator Widget\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n";
+		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +378,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rotator IPA App/Pods-Rotator IPA App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB23790DBC03B718EBDD0CA8 /* [CP] Check Pods Manifest.lock */ = {
+		B3EAF123C7F2585723C85150 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7109C59525324483001807AD /* API.swift in Sources */,
 				7146581E252A5DD000BF8D1E /* Rotator_Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +529,7 @@
 		};
 		71465826252A5DD200BF8D1E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ADAC215D3339FC9043BC351 /* Pods-Rotator WidgetExtension.debug.xcconfig */;
+			baseConfigurationReference = FBCBF9BE447E82AA40DD2687 /* Pods-Rotator WidgetExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -524,7 +551,11 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(inherited)\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Apollo\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SQLite.swift\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
@@ -540,7 +571,7 @@
 		};
 		71465827252A5DD200BF8D1E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF2A76219632209AA9C1E60D /* Pods-Rotator WidgetExtension.release.xcconfig */;
+			baseConfigurationReference = A5AB5E552C60619EA0A4B8BE /* Pods-Rotator WidgetExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -563,7 +594,11 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(inherited)\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Apollo\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SQLite.swift\"",
+				);
 				MTL_FAST_MATH = YES;
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.rotatoripa.app.Rotator-Widget";

@@ -1,7 +1,11 @@
 module.exports = {
+  env: {
+    'jest/globals': true,
+  },
   extends: 'airbnb',
   parser: '@babel/eslint-parser',
   plugins: [
+    'jest',
     'react',
     'react-native',
   ],
