@@ -16,7 +16,7 @@ function HomeScreen({ navigation }) {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Hello!</Text>
-      <Button onPress={() => navigation.navigate('Details')}>Go to details</Button>
+      <Button title="Go To Details" onPress={() => navigation.navigate('Beer')} />
     </View>
   );
 }
