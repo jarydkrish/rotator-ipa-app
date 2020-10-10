@@ -1,0 +1,14 @@
+query WigdetQuery {
+  beers(first: 8) {
+    nodes {
+      id
+      name
+      kind
+      description
+      startDate
+      bottleDate
+      readyDate
+      recipeUrl
+    }
+  }
+}

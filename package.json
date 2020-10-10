@@ -1,6 +1,7 @@
 {
   "main": "index.js",
   "scripts": {
+    "relay": "relay-compiler --src ./src --schema ./schema.json",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "web": "expo start --web",
@@ -9,41 +10,61 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.7.6",
+    "@react-navigation/stack": "^5.9.3",
     "expo": "~39.0.2",
     "expo-splash-screen": "~0.6.2",
     "expo-status-bar": "~1.0.2",
     "expo-updates": "~0.3.2",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "~0.63.3",
     "react-native-gesture-handler": "~1.7.0",
     "react-native-reanimated": "~1.13.0",
+    "react-native-safe-area-context": "^3.1.8",
     "react-native-screens": "~2.10.1",
+    "react-native-svg": "^12.1.0",
     "react-native-unimodules": "~0.11.0",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "react-relay": "^10.0.1",
+    "victory-native": "^35.0.1"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
     "@babel/eslint-parser": "^7.11.5",
     "babel-jest": "~25.2.6",
+    "babel-plugin-relay": "^10.0.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "^7.10.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-graphql": "^4.0.0",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.21.3",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-react-native": "^3.10.0",
+    "graphql": "^15.3.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "~25.2.6",
-    "jest-enzyme": "^7.1.2"
+    "jest-enzyme": "^7.1.2",
+    "jest-transform-stub": "^2.0.0",
+    "relay-compiler": "^10.0.1",
+    "relay-config": "^10.0.1",
+    "typescript": "^4.0.3"
   },
   "jest": {
     "preset": "react-native",
     "setupFilesAfterEnv": [
       "<rootDir>/setupTests.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   },
   "private": true
 }
