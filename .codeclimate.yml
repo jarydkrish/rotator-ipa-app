@@ -1,5 +1,5 @@
 version: "2"
 exclude_patterns:
-  - **/node_modules/
+  - "**/node_modules/"
   - "ios/Rotator Widget/API.swift"
-  - **/*.test.js
+  - "**/*.test.js"
