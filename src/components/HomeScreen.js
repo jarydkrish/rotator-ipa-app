@@ -12,11 +12,12 @@ const styles = StyleSheet.create({
 });
 
 function HomeScreen({ navigation }) {
+  const onPress = () => navigation.navigate('Beer');
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Hello!</Text>
-      <Button title="Go To Details" onPress={() => navigation.navigate('Beer')} />
+      <Button title="Go To Details" onPress={onPress} />
     </View>
   );
 }
