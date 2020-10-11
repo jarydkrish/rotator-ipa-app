@@ -3,3 +3,4 @@ exclude_patterns:
   - "**/node_modules/"
   - "ios/Rotator Widget/API.swift"
   - "**/*.test.js"
+  - "**/*.graphql.js"
