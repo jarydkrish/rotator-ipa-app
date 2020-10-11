@@ -4,3 +4,6 @@ exclude_patterns:
   - "ios/Rotator Widget/API.swift"
   - "**/*.test.js"
   - "**/*.graphql.js"
+plugins:
+  eslint:
+    enabled: true
