@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { View } from 'react-native';
 
-import Beer from './Beer';
+import BeerContainer from './Beer';
 
 const Beers = ({ props: { beers }, navigation }) => {
   if (!beers || !beers.nodes) {
@@ -12,7 +12,7 @@ const Beers = ({ props: { beers }, navigation }) => {
     <View>
       {
         beers.nodes.map((beer) => (
-          <Beer key={beer.id} beer={beer} navigation={navigation} />
+          <BeerContainer key={beer.id} beer={beer} navigation={navigation} />
         ))
       }
     </View>

@@ -2,7 +2,7 @@ import { shallow } from 'enzyme';
 import React from 'react';
 
 import Beers from '../Beers';
-import Beer from '../Beer';
+import BeerContainer from '../Beer';
 
 describe('<Beers />', () => {
   it('should render at least one <Beer />', () => {
@@ -12,6 +12,6 @@ describe('<Beers />', () => {
         navigation={{ navigate: () => {} }}
       />,
     );
-    expect(wrapper.find(Beer).length).toEqual(1);
+    expect(wrapper.find(BeerContainer).length).toEqual(1);
   });
 });
