@@ -1,27 +1,41 @@
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
 import { shallow } from 'enzyme';
 import React from 'react';
-import { Button, View } from 'react-native';
+import { QueryRenderer } from 'react-relay';
 
 import HomeScreen from '../HomeScreen';
 
+let mock = null;
+
 describe('<HomeScreen />', () => {
-  it('should render a <View />', () => {
+  beforeEach(() => {
+    mock = new MockAdapter(axios);
+    mock.onGet('/graphql').reply(200, {
+      data: {
+        beers: {
+          nodes: [
+            {
+              id: 'gid://rotator-ipa/Beer/3',
+              name: 'Oktoberfest Sudo Lager',
+              kind: 'Oktoberfest',
+            },
+          ],
+        },
+      },
+    });
+  });
+
+  afterEach(() => {
+    mock.restore();
+  });
+
+  it('should render a <QueryRenderer />', () => {
     const wrapper = shallow(
       <HomeScreen
         navigation={{ navigate: () => {} }}
       />,
     );
-    expect(wrapper.find(View).length).toEqual(1);
-  });
-
-  it('should navigate when you press a button', () => {
-    const navigate = jest.fn();
-    const wrapper = shallow(
-      <HomeScreen
-        navigation={{ navigate }}
-      />,
-    );
-    wrapper.find(Button).first().simulate('press');
-    expect(navigate.mock.calls.length).toEqual(1);
+    expect(wrapper.find(QueryRenderer).length).toEqual(1);
   });
 });
