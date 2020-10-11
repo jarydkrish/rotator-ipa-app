@@ -1,26 +1,36 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { QueryRenderer } from 'react-relay';
+import graphql from 'babel-plugin-relay/macro';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import environment from '../utilities/environment';
 
-function HomeScreen({ navigation }) {
-  const onPress = () => navigation.navigate('Beer');
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Hello!</Text>
-      <Button title="Go To Details" onPress={onPress} />
-    </View>
-  );
-}
+import Beers from './home_screen/Beers';
+
+const query = graphql`
+  query HomeScreenQuery {
+    beers(first: 8) {
+      nodes {
+        id
+        ...Beer_beer
+      }
+    }
+  }
+`;
+
+const HomeScreen = ({ navigation }) => (
+  <QueryRenderer
+    environment={environment}
+    query={query}
+    variables={{}}
+    render={({ props }) => {
+      if (!props) {
+        return null;
+      }
+      return <Beers navigation={navigation} props={props} />;
+    }}
+  />
+);
 
 HomeScreen.propTypes = {
   navigation: PropTypes.shape({
